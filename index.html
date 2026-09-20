@@ -1,0 +1,1065 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Skylark Pyrotechnics — Fireworks shows since 1989</title>
+<meta name="description" content="Family-run fireworks displays for weddings, corporate events, civic celebrations and stadiums. Licensed & insured. A real quote within one business day.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 1 14.6 9.4 23 12 14.6 14.6 12 23 9.4 14.6 1 12 9.4 9.4Z' fill='%23FFB524'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,200..800&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<style>
+/* ============ FOUNDATION ============ */
+*{box-sizing:border-box;margin:0;padding:0}
+[hidden]{display:none!important}
+html{-webkit-text-size-adjust:100%}
+:root{
+  --paper:#FAF5EB; --paper-2:#FFFDF7;
+  --cream:#FDFBF4; --cream-dim:rgba(253,251,244,.72); --cream-dim2:rgba(253,251,244,.5);
+  --ink:#201A3D; --ink-dim:rgba(32,26,61,.66);
+  --line:rgba(32,26,61,.14); --line-d:rgba(253,251,244,.16);
+  --night:#191336;
+  --coral:#FF4B2E; --coral-deep:#E9391C; --coral-ink:#C93A10;
+  --gold:#FFB524; --gold-ink:#96660A;
+  --violet:#6E56E8; --violet-ink:#4A37B8;
+  --teal:#0FAE9C;  --teal-ink:#0A7A6C;
+  --pink:#F0568F;  --pink-ink:#C22E63;
+}
+body{background:var(--paper);color:var(--ink);font-family:'Instrument Sans','Helvetica Neue',Arial,sans-serif;font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+::selection{background:var(--gold);color:var(--ink)}
+:focus-visible{outline:2.5px solid var(--coral);outline-offset:3px}
+.on-dark :focus-visible{outline-color:var(--gold)}
+.container{max-width:1180px;margin:0 auto;padding:0 clamp(20px,4vw,44px)}
+.ic{width:17px;height:17px;flex:none}
+.section{padding:clamp(70px,9vw,118px) 0}
+.perf-top{border-top:2px dashed rgba(32,26,61,.16)}
+#quote,#history,#services,#gallery{scroll-margin-top:92px}
+
+/* ============ TYPE ============ */
+.kicker{display:inline-flex;align-items:center;gap:9px;font-size:12px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--coral-ink)}
+.kicker .ic{width:14px;height:14px}
+.on-dark .kicker{color:var(--gold)}
+.h2{font-family:'Bricolage Grotesque',sans-serif;font-optical-sizing:auto;font-weight:800;font-stretch:94%;font-size:clamp(32px,4.6vw,58px);line-height:1.02;letter-spacing:-.02em;margin-top:18px}
+.h2 em{font-family:'Instrument Serif',Georgia,serif;font-style:italic;font-weight:400;font-size:1.05em;color:var(--coral-ink)}
+.on-dark .h2 em{color:var(--gold)}
+
+/* ============ BUTTONS ============ */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:15px 25px;border-radius:12px;font-weight:700;font-size:15px;letter-spacing:.01em;transition:transform .2s,background .2s,border-color .2s,color .2s}
+.btn:active{transform:translateY(1px)}
+.btn .ic{width:16px;height:16px}
+.btn-coral{background:var(--coral);color:#FFF6EE}
+.btn-coral:hover{background:var(--coral-deep);transform:translateY(-2px)}
+.btn-ghost-d{border:1.5px solid rgba(253,251,244,.35);color:var(--cream)}
+.btn-ghost-d:hover{border-color:var(--gold);color:var(--gold)}
+.btn-cream{background:var(--cream);color:var(--ink)}
+.btn-cream:hover{background:#fff;transform:translateY(-2px)}
+.btn-ghost-l{border:1.5px solid var(--line);color:var(--ink)}
+.btn-ghost-l:hover{border-color:var(--ink)}
+/* ticket-stub notches (decorative cut-outs; degrades gracefully) */
+.ticket{--n:9px;
+  -webkit-mask:radial-gradient(circle var(--n) at 0 50%,transparent 98%,#000),radial-gradient(circle var(--n) at 100% 50%,transparent 98%,#000);
+  -webkit-mask-composite:source-in;
+  mask:radial-gradient(circle var(--n) at 0 50%,transparent 98%,#000),radial-gradient(circle var(--n) at 100% 50%,transparent 98%,#000);
+  mask-composite:intersect}
+
+/* ============ HEADER ============ */
+.site-head{position:sticky;top:0;z-index:60;background:var(--paper);border-bottom:1px solid var(--line);transition:box-shadow .3s}
+.site-head.scrolled{box-shadow:0 10px 30px -18px rgba(32,26,61,.3)}
+.head-in{display:flex;align-items:center;gap:26px;height:68px}
+.brand{display:flex;align-items:center;gap:11px}
+.brand-mark{width:28px;height:28px;flex:none}
+.brand-txt{display:flex;flex-direction:column}
+.brand-name{font-family:'Bricolage Grotesque';font-weight:800;font-size:19px;letter-spacing:.02em;line-height:1}
+.brand-sub{font-size:8.5px;font-weight:700;letter-spacing:.42em;color:var(--ink-dim);margin-top:3px;text-transform:uppercase}
+.head-links{display:flex;gap:26px;margin-left:12px}
+.nav-link{font-size:14.5px;font-weight:600;color:var(--ink-dim);position:relative;padding:6px 0}
+.nav-link::after{content:"";position:absolute;left:0;right:0;bottom:0;height:2.5px;background:var(--coral);transform:scaleX(0);transform-origin:left;transition:transform .25s}
+.nav-link:hover,.nav-link.active{color:var(--ink)}
+.nav-link:hover::after,.nav-link.active::after{transform:scaleX(1)}
+.head-right{margin-left:auto;display:flex;align-items:center;gap:20px}
+.head-phone{display:flex;align-items:center;gap:9px;font-weight:700;font-size:14.5px}
+.head-phone .ic{width:15px;height:15px;color:var(--coral-ink)}
+.head-phone:hover{color:var(--coral-ink)}
+.burger{display:none;width:42px;height:42px;place-items:center;border:1.5px solid var(--line);border-radius:10px}
+.burger .ic{width:19px;height:19px}
+.burger .ic-x{display:none}
+body.menu-open .burger .ic-x{display:block}
+body.menu-open .burger .ic-menu{display:none}
+body.menu-open{overflow:hidden}
+.m-menu{position:fixed;z-index:55;top:69px;left:0;right:0;bottom:0;background:var(--night);padding:26px clamp(20px,4vw,44px) 44px;opacity:0;visibility:hidden;transform:translateY(-8px);transition:.3s;overflow:auto}
+body.menu-open .m-menu{opacity:1;visibility:visible;transform:none}
+.m-link{display:block;font-family:'Bricolage Grotesque';font-size:30px;font-weight:800;padding:16px 0;border-bottom:1px solid var(--line-d);color:var(--cream)}
+.m-cta{margin-top:26px}
+
+/* ============ HERO ============ */
+.hero{position:relative;background:var(--night);color:var(--cream);overflow:hidden}
+#heroStars{position:absolute;inset:0;width:100%;height:100%}
+.hero-in{position:relative;z-index:2;display:grid;grid-template-columns:1.12fr .88fr;gap:clamp(34px,5vw,70px);align-items:center;min-height:min(calc(100vh - 69px),880px);min-height:min(calc(100svh - 69px),880px);padding-top:clamp(36px,6vh,70px);padding-bottom:clamp(44px,7vh,80px)}
+.hero h1{font-family:'Bricolage Grotesque';font-optical-sizing:auto;font-weight:800;font-stretch:94%;font-size:clamp(42px,6.6vw,86px);line-height:.98;letter-spacing:-.02em;margin-top:22px}
+.hero h1 em{font-family:'Instrument Serif';font-style:italic;font-weight:400;color:var(--gold);font-size:1.05em}
+.hero-sub{max-width:520px;margin-top:22px;font-size:clamp(15.5px,1.5vw,17.5px);color:var(--cream-dim)}
+.hero-cta{display:flex;flex-wrap:wrap;gap:14px;margin-top:32px}
+.hero-meta{display:flex;flex-wrap:wrap;gap:10px 26px;margin-top:44px;padding-top:22px;border-top:1px solid var(--line-d)}
+.hero-meta span{display:flex;align-items:center;gap:9px;font-size:13px;font-weight:600;color:var(--cream-dim)}
+.hero-meta .ic{width:15px;height:15px;color:var(--gold)}
+.rise{opacity:0;transform:translateY(16px);animation:rise .8s cubic-bezier(.2,.65,.25,1) forwards}
+@keyframes rise{to{opacity:1;transform:none}}
+.d1{animation-delay:.05s}.d2{animation-delay:.15s}.d3{animation-delay:.25s}.d4{animation-delay:.36s}.d5{animation-delay:.5s}
+
+.arch{position:relative;justify-self:end;width:min(100%,430px)}
+.arch::before{content:"";position:absolute;inset:0;background:var(--gold);border-radius:999px 999px 22px 22px;transform:translate(13px,13px) rotate(1.6deg)}
+.arch img{position:relative;width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:999px 999px 22px 22px}
+.arch-chip{position:absolute;z-index:3;display:flex;align-items:center;gap:8px;padding:10px 15px;border-radius:999px;font-size:12.5px;font-weight:700;white-space:nowrap;box-shadow:0 12px 26px -10px rgba(0,0,0,.45)}
+.arch-chip .ic{width:14px;height:14px}
+.chip-review{left:-26px;top:16%;background:var(--cream);color:var(--ink);animation:bob 5.5s ease-in-out infinite}
+.chip-review .ic{color:var(--gold);fill:var(--gold)}
+.chip-open{right:-14px;bottom:11%;background:var(--gold);color:var(--ink);animation:bob 6.5s ease-in-out 1.2s infinite}
+@keyframes bob{50%{transform:translateY(-8px)}}
+
+/* ============ PILLS BAND ============ */
+.pills{background:var(--paper);border-bottom:1px solid var(--line);padding:24px 0}
+.pills-in{display:flex;flex-wrap:wrap;align-items:center;gap:11px}
+.pills-label{font-size:11.5px;font-weight:800;letter-spacing:.2em;text-transform:uppercase;margin-right:10px}
+.pill{display:inline-flex;align-items:center;gap:8px;padding:9px 16px;border:1.5px solid var(--ink);border-radius:999px;font-weight:600;font-size:13.5px;transition:background .2s,color .2s}
+.pill .ic{width:13px;height:13px;color:var(--coral-ink)}
+.pill:hover{background:var(--ink);color:var(--paper)}
+.pill:hover .ic{color:var(--gold)}
+
+/* ============ HISTORY / FUSE TIMELINE ============ */
+.hist-head{max-width:780px}
+.fuse{margin-top:clamp(36px,5vw,58px)}
+.fuse-rail{position:relative;display:flex;justify-content:space-between;align-items:flex-start;padding:2px 0 0}
+.fuse-rail::before{content:"";position:absolute;left:10px;right:10px;top:8.5px;height:2px;background:var(--line)}
+.fuse-stop{position:relative;display:flex;flex-direction:column;align-items:center;gap:9px;min-width:52px;padding:0 2px}
+.fuse-dot{width:15px;height:15px;border-radius:50%;background:var(--paper);border:3px solid var(--ink);position:relative;z-index:1;transition:transform .25s,background .25s}
+.fuse-stop:hover .fuse-dot{transform:scale(1.15)}
+.fuse-stop.is-on .fuse-dot{background:var(--gold);transform:scale(1.3)}
+.fuse-yrs{font-size:12px;font-weight:700;letter-spacing:.06em;color:var(--ink-dim);transition:color .25s}
+.fuse-stop.is-on .fuse-yrs{color:var(--ink)}
+.fuse-spark{position:absolute;top:9.5px;left:0;width:13px;height:13px;margin:-6.5px 0 0 -6.5px;z-index:2;pointer-events:none;transition:opacity .3s}
+.fuse-panels{display:grid;margin-top:clamp(26px,4vw,40px)}
+.fuse-panel{grid-area:1/1;display:grid;grid-template-columns:auto 1fr;gap:clamp(22px,4vw,56px);align-items:start;opacity:0;visibility:hidden;transform:translateY(12px);transition:opacity .45s,transform .45s,visibility .45s}
+.fuse-panel.is-on{opacity:1;visibility:visible;transform:none}
+.fp-year{font-family:'Bricolage Grotesque';font-weight:800;font-stretch:92%;font-size:clamp(58px,8.5vw,116px);line-height:.86;letter-spacing:-.02em;color:transparent;-webkit-text-stroke:2px var(--ink);min-width:2.6ch}
+.fp-body h3{font-family:'Bricolage Grotesque';font-weight:700;font-size:clamp(19px,2.2vw,24px);letter-spacing:-.01em}
+.fp-body p{color:var(--ink-dim);margin-top:8px;max-width:62ch;font-size:15.5px}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(18px,3vw,30px);margin-top:clamp(46px,6vw,72px);border-top:2.5px solid var(--ink);padding-top:26px}
+.stat b{display:block;font-family:'Bricolage Grotesque';font-weight:800;font-size:clamp(34px,4.4vw,56px);line-height:1;letter-spacing:-.02em}
+.stat b i{font-style:normal;color:var(--coral-ink)}
+.stat span{display:block;font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-dim);margin-top:8px}
+
+/* ============ QUOTE / TICKET FORM (dark section) ============ */
+.on-dark{background:var(--night);color:var(--cream)}
+.quote-grid{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(40px,6vw,90px);align-items:start}
+.quote-lead{margin-top:20px;color:var(--cream-dim);max-width:44ch}
+.qsteps{margin-top:34px}
+.qstep{display:grid;grid-template-columns:44px 1fr;gap:16px;padding:18px 0;border-top:1px solid var(--line-d)}
+.qstep:last-of-type{border-bottom:1px solid var(--line-d)}
+.qstep b{font-family:'Bricolage Grotesque';font-weight:800;font-size:20px;color:var(--gold)}
+.qstep h3{font-size:15.5px;font-weight:700}
+.qstep p{font-size:14px;color:var(--cream-dim);margin-top:3px}
+.alt{margin-top:32px}
+.alt>p{font-size:11.5px;font-weight:800;letter-spacing:.2em;text-transform:uppercase;color:var(--cream-dim2);margin-bottom:12px}
+.alt-phone{display:flex;align-items:center;gap:11px;font-family:'Bricolage Grotesque';font-weight:800;font-size:clamp(24px,2.6vw,32px)}
+.alt-mail{display:inline-flex;align-items:center;gap:10px;font-size:15px;font-weight:600;margin-top:12px;color:var(--cream-dim)}
+.alt-phone .ic,.alt-mail .ic{width:18px;height:18px;color:var(--gold)}
+.alt-phone:hover{color:var(--gold)}
+.alt-mail:hover{color:var(--cream)}
+
+.ticket-card{position:relative;display:grid;grid-template-columns:96px minmax(0,1fr);background:var(--paper);color:var(--ink);border-radius:18px}
+.stub{position:relative;background:var(--coral);color:#FFF6EE;display:flex;align-items:center;justify-content:center;border-radius:18px 0 0 18px}
+.stub span{writing-mode:vertical-rl;transform:rotate(180deg);font-weight:800;font-size:11px;letter-spacing:.34em;text-transform:uppercase;white-space:nowrap;padding:18px 0}
+.stub::after{content:"";position:absolute;top:10px;bottom:10px;right:0;border-right:2px dashed rgba(32,26,61,.3)}
+.ticket-card::before,.ticket-card::after{content:"";position:absolute;width:20px;height:20px;border-radius:50%;background:var(--night);left:96px;transform:translate(-50%,-50%);z-index:3}
+.ticket-card::before{top:0}
+.ticket-card::after{top:100%}
+.form-side{padding:clamp(24px,3.2vw,38px)}
+.frow{display:grid;grid-template-columns:1fr 1fr;gap:15px}
+.field{margin-bottom:15px}
+.field label{display:block;font-size:12.5px;font-weight:700;margin-bottom:6px}
+.req{color:var(--coral-ink)}
+.opt{color:var(--ink-dim);font-weight:600}
+.field input,.field select,.field textarea{width:100%;padding:12px 14px;border:1.5px solid rgba(32,26,61,.24);border-radius:10px;background:#fff;font:inherit;font-size:16px;color:var(--ink);transition:border-color .2s,box-shadow .2s}
+.field textarea{resize:vertical;min-height:104px}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--coral);box-shadow:0 0 0 3.5px rgba(255,75,46,.15)}
+.field input::placeholder,.field textarea::placeholder{color:rgba(32,26,61,.38)}
+.selwrap{position:relative}
+.selwrap select{appearance:none;-webkit-appearance:none;padding-right:40px;cursor:pointer}
+.selwrap .ic{position:absolute;right:13px;top:50%;transform:translateY(-50%);width:16px;height:16px;color:var(--ink-dim);pointer-events:none}
+.err{display:none;align-items:center;gap:7px;margin-top:6px;font-size:12.5px;font-weight:600;color:var(--coral-ink)}
+.err .ic{width:14px;height:14px}
+.field.invalid .err{display:flex}
+.field.invalid input,.field.invalid select,.field.invalid textarea{border-color:var(--coral)}
+.form-foot .btn{width:100%}
+.micro{display:flex;align-items:center;justify-content:center;gap:8px;margin-top:13px;font-size:12.5px;color:var(--ink-dim)}
+.micro .ic{width:13px;height:13px}
+.success{text-align:center;padding:30px 8px}
+.success .ok-ic{width:52px;height:52px;color:var(--gold);fill:var(--gold);margin:0 auto;display:block}
+.success h3{font-family:'Bricolage Grotesque';font-weight:800;font-size:26px;margin:16px 0 8px}
+.ref{font-size:12px;font-weight:800;letter-spacing:.18em;color:var(--coral-ink);text-transform:uppercase}
+.success p{color:var(--ink-dim);max-width:42ch;margin:10px auto 22px}
+
+/* ============ SHOWS PAGE ============ */
+.shows-head{padding:clamp(56px,8vw,104px) 0 0}
+.shows-head .lead{margin-top:20px;max-width:620px;color:var(--ink-dim);font-size:16.5px}
+.banner{margin-top:clamp(28px,4vw,48px)}
+.banner .ph{position:relative;border-radius:16px;overflow:hidden}
+.banner img{width:100%;aspect-ratio:21/9;object-fit:cover}
+.banner-cap{position:absolute;left:16px;bottom:16px;display:flex;align-items:center;gap:10px;background:var(--night);color:var(--cream);padding:10px 16px;border-radius:999px;font-size:13px;font-weight:600}
+.banner-cap .ic{width:14px;height:14px;color:var(--gold)}
+
+/* service poster cards */
+.svc-list{display:grid;gap:16px}
+.svc{background:var(--paper-2);border:1.5px solid var(--line);border-top:6px solid var(--acc);border-radius:16px;padding:clamp(22px,3.4vw,34px);display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:clamp(18px,3vw,42px);align-items:start;transition:transform .25s,box-shadow .25s}
+.svc:hover{transform:translateY(-4px);box-shadow:0 22px 44px -26px rgba(32,26,61,.35)}
+.svc-num{font-family:'Bricolage Grotesque';font-weight:800;font-stretch:92%;font-size:clamp(38px,4.6vw,60px);line-height:.9;letter-spacing:-.02em;color:transparent;-webkit-text-stroke:1.5px var(--acc);transition:color .25s}
+.svc:hover .svc-num{color:var(--acc)}
+.svc h3{font-family:'Bricolage Grotesque';font-weight:700;font-size:clamp(20px,2.4vw,27px);letter-spacing:-.01em}
+.svc-desc{color:var(--ink-dim);margin-top:8px;max-width:62ch;font-size:15px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.chip2{font-size:12.5px;font-weight:600;border:1px solid var(--line);background:#fff;padding:6px 12px 6px 9px;border-radius:999px;display:inline-flex;align-items:center;gap:7px}
+.chip2::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--acc);flex:none}
+.svc-side{display:flex;flex-direction:column;align-items:flex-end;gap:14px;text-align:right}
+.svc-meta{font-size:11.5px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--acc-ink);white-space:nowrap}
+.svc-link{display:inline-flex;align-items:center;gap:8px;font-weight:700;font-size:14px;border-bottom:2px solid var(--acc-ink);padding-bottom:3px;transition:gap .2s}
+.svc-link:hover{gap:12px}
+.svc-link .ic{width:15px;height:15px;color:var(--acc-ink)}
+
+/* gallery filmstrip */
+.gal-head{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.gal-nav{display:flex;gap:10px}
+.gal-btn{width:44px;height:44px;border:1.5px solid var(--ink);border-radius:50%;display:grid;place-items:center;transition:background .2s,color .2s,opacity .2s}
+.gal-btn .ic{width:17px;height:17px}
+.gal-btn:hover{background:var(--ink);color:var(--paper)}
+.gal-btn[disabled]{opacity:.25;pointer-events:none}
+.strip{display:flex;gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;padding:6px 4px 8px;margin-top:26px;scrollbar-width:none;cursor:grab}
+.strip.dragging{cursor:grabbing;scroll-snap-type:none}
+.strip::-webkit-scrollbar{display:none}
+.sitem{flex:0 0 clamp(240px,30vw,380px);scroll-snap-align:start;user-select:none}
+.sitem .ph{border-radius:14px;overflow:hidden;aspect-ratio:4/5;background:var(--line)}
+.sitem img{width:100%;height:100%;object-fit:cover;transition:transform .6s;pointer-events:none}
+.sitem:hover img{transform:scale(1.04)}
+.sitem figcaption{display:flex;justify-content:space-between;gap:12px;padding:11px 2px 0}
+.sitem b{font-size:13.5px}
+.sitem span{font-size:12px;color:var(--ink-dim);white-space:nowrap}
+
+/* CTA band */
+.cta{background:var(--gold);color:var(--ink);position:relative;overflow:hidden}
+.cta-star{position:absolute;right:-70px;top:-70px;width:300px;height:300px;background:rgba(32,26,61,.09);clip-path:polygon(100% 50%,69.4% 58%,85.4% 85.4%,58% 69.4%,50% 100%,42% 69.4%,14.6% 85.4%,30.6% 58%,0% 50%,30.6% 42%,14.6% 14.6%,42% 30.6%,50% 0%,58% 30.6%,85.4% 14.6%,69.4% 42%);animation:spin 46s linear infinite}
+.cta .container{position:relative;z-index:2}
+.cta .kicker{color:var(--ink)}
+.cta .h2 em{color:var(--coral-ink)}
+.cta-phone{display:inline-block;font-family:'Bricolage Grotesque';font-weight:800;font-stretch:94%;font-size:clamp(36px,5.4vw,62px);letter-spacing:-.02em;line-height:1.05;margin-top:16px}
+.cta-phone:hover{text-decoration:underline;text-underline-offset:7px;text-decoration-thickness:3.5px}
+.cta-in{display:flex;align-items:center;justify-content:space-between;gap:40px;flex-wrap:wrap}
+.cta-right{display:flex;flex-direction:column;gap:14px;align-items:flex-start}
+.cta-mail{font-size:14.5px;font-weight:700;text-decoration:underline;text-underline-offset:4px}
+.cta-mail:hover{color:var(--coral-ink)}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+/* ============ FOOTER ============ */
+.site-foot{background:var(--night);color:var(--cream);border-top:1px solid var(--line-d);padding:clamp(54px,7vw,84px) 0 0;overflow:hidden}
+.foot-grid{display:grid;grid-template-columns:2fr 1fr 1.2fr;gap:44px}
+.foot-brand p{margin-top:16px;color:var(--cream-dim);font-size:14.5px;max-width:32ch}
+.foot-brand .brand-name{color:var(--cream)}
+.foot-brand .brand-sub{color:var(--cream-dim2)}
+.foot-col h4{font-size:11.5px;font-weight:800;letter-spacing:.22em;text-transform:uppercase;color:var(--cream-dim2);margin-bottom:16px}
+.foot-col a{display:flex;align-items:center;gap:10px;padding:6px 0;font-size:14.5px;color:var(--cream-dim)}
+.foot-col a:hover{color:var(--gold)}
+.foot-col a .ic{width:15px;height:15px;color:var(--gold)}
+.foot-low{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px 24px;margin-top:clamp(40px,6vw,60px);padding:20px 0;border-top:1px solid var(--line-d);font-size:12.5px;color:var(--cream-dim2);position:relative;z-index:2}
+.foot-word{font-family:'Bricolage Grotesque';font-weight:800;font-stretch:92%;font-size:clamp(76px,17.5vw,250px);line-height:.76;letter-spacing:-.02em;text-align:center;color:transparent;-webkit-text-stroke:1.5px rgba(253,251,244,.14);user-select:none;margin-top:8px;transform:translateY(14%)}
+
+/* ============ TOAST / REVEAL ============ */
+.toast{position:fixed;z-index:90;left:50%;bottom:26px;transform:translate(-50%,16px);display:flex;gap:10px;align-items:center;background:var(--ink);border:1px solid rgba(253,251,244,.2);color:var(--cream);padding:13px 20px;border-radius:12px;opacity:0;pointer-events:none;transition:.35s;max-width:calc(100vw - 40px)}
+.toast.show{opacity:1;transform:translate(-50%,0)}
+.toast .ic{width:16px;height:16px;color:var(--gold)}
+.rv{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.65,.25,1)}
+.rv.in{opacity:1;transform:none}
+
+/* ============ RESPONSIVE ============ */
+@media(max-width:920px){
+  .head-links{display:none}
+  .burger{display:grid}
+  .hero-in{grid-template-columns:1fr;min-height:0;padding-top:26px}
+  .arch{justify-self:center;width:min(100%,380px)}
+  .chip-review{left:10px;top:8%}
+  .chip-open{right:10px;bottom:7%}
+  .quote-grid{grid-template-columns:1fr}
+  .foot-grid{grid-template-columns:1fr 1fr}
+  .foot-brand{grid-column:1/-1}
+  .svc{grid-template-columns:1fr}
+  .svc-side{flex-direction:row;align-items:center;justify-content:space-between;text-align:left;width:100%}
+}
+@media(max-width:700px){
+  .ticket-card{grid-template-columns:1fr;grid-template-rows:auto 1fr}
+  .stub{height:44px;border-radius:18px 18px 0 0;padding:0}
+  .stub span{writing-mode:horizontal-tb;transform:none;padding:0}
+  .stub::after{top:auto;bottom:0;left:12px;right:12px;border-right:0;border-bottom:2px dashed rgba(32,26,61,.3)}
+  .ticket-card::before{left:0;top:44px}
+  .ticket-card::after{left:100%;top:44px}
+  .banner-cap{left:10px;right:10px;bottom:10px;flex-wrap:wrap;border-radius:12px}
+}
+@media(max-width:640px){
+  .stats{grid-template-columns:1fr 1fr}
+  .frow{grid-template-columns:1fr}
+  .cta-in{flex-direction:column;align-items:flex-start}
+  .fuse-panel{grid-template-columns:1fr;gap:12px}
+  .fp-year{font-size:54px;-webkit-text-stroke-width:1.5px}
+  .fuse-stop{min-width:44px}
+  .fuse-yrs{font-size:10.5px}
+}
+@media(max-width:560px){
+  .head-quote{display:none}
+  .head-right{gap:12px}
+  .head-phone span{display:none}
+  .head-phone{width:42px;height:42px;border:1.5px solid var(--line);border-radius:10px;display:grid;place-items:center}
+  .foot-grid{grid-template-columns:1fr}
+}
+@media(prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important}
+  .rise,.rv{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+
+<!-- toast notification -->
+<div class="toast" id="toast" role="status"><i data-lucide="sparkles" class="ic"></i><span></span></div>
+
+<!-- ============ HEADER ============ -->
+<header class="site-head" id="siteHead">
+  <div class="container head-in">
+    <a class="brand" href="#/home" data-go="home" aria-label="Skylark Pyrotechnics — home">
+      <!-- PLACEHOLDER MARK: swap this inline SVG for your refreshed logo file -->
+      <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><path d="M16 1.5 19.2 12 30 15.2 19.2 18.4 16 29 12.8 18.4 2 15.2 12.8 12Z" fill="#FF4B2E"/><circle cx="25.5" cy="5.5" r="3" fill="#FFB524"/></svg>
+      <span class="brand-txt"><span class="brand-name">SKYLARK</span><span class="brand-sub">Pyrotechnics</span></span>
+    </a>
+    <nav class="head-links" aria-label="Primary">
+      <a class="nav-link" href="#/home" data-go="home">Home</a>
+      <a class="nav-link" href="#/shows" data-go="shows">Our shows</a>
+    </nav>
+    <div class="head-right">
+      <a class="head-phone" href="tel:+15550141989"><i data-lucide="phone" class="ic"></i><span>(555) 014-1989</span></a>
+      <a class="btn btn-coral ticket head-quote" href="#/home" data-go="home" data-anchor="quote">Get a quote</a>
+      <button class="burger" id="burger" aria-label="Menu" aria-expanded="false">
+        <i data-lucide="menu" class="ic ic-menu"></i><i data-lucide="x" class="ic ic-x"></i>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- mobile menu -->
+<nav class="m-menu" aria-label="Mobile">
+  <a class="m-link" href="#/home" data-go="home">Home</a>
+  <a class="m-link" href="#/shows" data-go="shows">Our shows</a>
+  <a class="m-link" href="#/home" data-go="home" data-anchor="quote">Get a quote</a>
+  <div class="m-cta">
+    <a class="btn btn-coral ticket" href="tel:+15550141989"><i data-lucide="phone" class="ic"></i>Call (555) 014-1989</a>
+  </div>
+</nav>
+
+<main>
+<!-- ==================================================
+     PAGE 1 — HOME
+     ================================================== -->
+<div id="view-home" class="view">
+
+  <section class="hero on-dark" id="hero">
+    <canvas id="heroStars" aria-hidden="true"></canvas>
+    <div class="container hero-in">
+      <div>
+        <p class="kicker rise d1"><i data-lucide="sparkle" class="ic"></i>Family-run pyrotechnics · Est. 1989</p>
+        <h1 class="rise d2">We make crowds<br><em>look up.</em></h1>
+        <p class="hero-sub rise d3">Skylark designs, permits, and fires bespoke fireworks shows across 14 states — backyard weddings to stadium finales. One crew, zero shortcuts, since 1989.</p>
+        <div class="hero-cta rise d4">
+          <a class="btn btn-coral ticket" href="#/home" data-go="home" data-anchor="quote">Get a quote <i data-lucide="arrow-right" class="ic"></i></a>
+          <a class="btn btn-ghost-d" href="#/shows" data-go="shows">Explore our shows</a>
+        </div>
+        <div class="hero-meta rise d5">
+          <span><i data-lucide="shield-check" class="ic"></i>Licensed &amp; insured</span>
+          <span><i data-lucide="award" class="ic"></i>1,600+ shows fired</span>
+          <span><i data-lucide="mouse-pointer-click" class="ic"></i>Tap the sky to launch one</span>
+        </div>
+      </div>
+      <div class="arch rise d3">
+        <!-- PLACEHOLDER PHOTO: swap for a signature shot from one of your displays -->
+        <img src="https://picsum.photos/seed/skylark-hero/900/1125.jpg" alt="Fireworks bursting over a night skyline">
+        <span class="arch-chip chip-review"><i data-lucide="star" class="ic"></i>4.9 · 320+ reviews</span>
+        <span class="arch-chip chip-open"><i data-lucide="calendar-days" class="ic"></i>Next opening: Aug 23</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- what we stage: quick pills into page 2 -->
+  <div class="pills">
+    <div class="container pills-in">
+      <span class="pills-label">We stage:</span>
+      <a class="pill" href="#/shows" data-go="shows"><i data-lucide="heart" class="ic"></i>Weddings &amp; private</a>
+      <a class="pill" href="#/shows" data-go="shows"><i data-lucide="briefcase" class="ic"></i>Corporate &amp; brand</a>
+      <a class="pill" href="#/shows" data-go="shows"><i data-lucide="flag" class="ic"></i>Civic &amp; holidays</a>
+      <a class="pill" href="#/shows" data-go="shows"><i data-lucide="trophy" class="ic"></i>Stadium finales</a>
+      <a class="pill" href="#/shows" data-go="shows"><i data-lucide="building-2" class="ic"></i>Rooftops &amp; close-proximity</a>
+    </div>
+  </div>
+
+  <!-- company history: "fuse" timeline -->
+  <section class="section" id="history">
+    <div class="container">
+      <div class="hist-head rv">
+        <p class="kicker"><i data-lucide="sparkle" class="ic"></i>Our story</p>
+        <h2 class="h2">A borrowed flatbed, 300 shells, and <em>one perfect boom.</em></h2>
+      </div>
+
+      <div class="fuse rv" id="fuse">
+        <div class="fuse-rail" aria-label="Company milestones">
+          <button class="fuse-stop is-on" aria-pressed="true" aria-label="1989 — One show, one flatbed"><span class="fuse-dot"></span><span class="fuse-yrs">1989</span></button>
+          <button class="fuse-stop" aria-pressed="false" aria-label="1998 — The city signs"><span class="fuse-dot"></span><span class="fuse-yrs">1998</span></button>
+          <button class="fuse-stop" aria-pressed="false" aria-label="2007 — Stadium nights"><span class="fuse-dot"></span><span class="fuse-yrs">2007</span></button>
+          <button class="fuse-stop" aria-pressed="false" aria-label="2016 — Rooftops and vineyards"><span class="fuse-dot"></span><span class="fuse-yrs">2016</span></button>
+          <button class="fuse-stop" aria-pressed="false" aria-label="Today — Third generation"><span class="fuse-dot"></span><span class="fuse-yrs">Today</span></button>
+          <span class="fuse-spark" aria-hidden="true"><svg viewBox="0 0 14 14"><path d="M7 0 8.6 5.4 14 7 8.6 8.6 7 14 5.4 8.6 0 7 5.4 5.4Z" fill="#FFB524"/></svg></span>
+        </div>
+        <div class="fuse-panels">
+          <article class="fuse-panel is-on" aria-hidden="false"><span class="fp-year">1989</span><div class="fp-body"><h3>One show, one flatbed</h3><p>Founder Marisol Vega fires her first civic show over Halyard Pond — 300 shells and a borrowed flatbed. The town asks her back before the smoke clears.</p></div></article>
+          <article class="fuse-panel" aria-hidden="true"><span class="fp-year">1998</span><div class="fp-body"><h3>The city signs</h3><p>First municipal contract: the sesquicentennial riverfront spectacular, choreographed live to a full orchestra — the show that put us on maps.</p></div></article>
+          <article class="fuse-panel" aria-hidden="true"><span class="fp-year">2007</span><div class="fp-body"><h3>Stadium nights</h3><p>Post-game pyro for the Kestrels begins. Forty thousand seats, frame-accurate cues, and a new bar for what a ballpark finale can be.</p></div></article>
+          <article class="fuse-panel" aria-hidden="true"><span class="fp-year">2016</span><div class="fp-body"><h3>Rooftops &amp; vineyards</h3><p>Our close-proximity division launches: full artistry for venues where space — not ambition — is the constraint.</p></div></article>
+          <article class="fuse-panel" aria-hidden="true"><span class="fp-year">Now</span><div class="fp-body"><h3>Third generation loading tubes</h3><p>Marisol's grandchildren run the crew today. Same obsessions as day one: safety first, finale last.</p></div></article>
+        </div>
+      </div>
+
+      <div class="stats rv">
+        <div class="stat"><b><span class="count" data-count="35">0</span></b><span>Years licensed</span></div>
+        <div class="stat"><b><span class="count" data-count="1600">0</span><i>+</i></b><span>Shows fired</span></div>
+        <div class="stat"><b><span class="count" data-count="14">0</span></b><span>States served</span></div>
+        <div class="stat"><b><span class="count" data-count="3">0</span></b><span>Generations</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- client intake form -->
+  <section class="section on-dark" id="quote">
+    <div class="container quote-grid">
+      <div class="rv">
+        <p class="kicker"><i data-lucide="sparkle" class="ic"></i>Get a quote</p>
+        <h2 class="h2">Tell us the date.<br><em>We'll bring the sky.</em></h2>
+        <p class="quote-lead">Two minutes now, a real quote from a working pyrotechnician within one business day. No call centers, no obligation.</p>
+        <div class="qsteps">
+          <div class="qstep"><b>01</b><div><h3>Share the details</h3><p>Date, venue size, and the occasion — that's enough to start sketching.</p></div></div>
+          <div class="qstep"><b>02</b><div><h3>Hear from a pyrotechnician</h3><p>A working member of our crew calls or writes back within one business day.</p></div></div>
+          <div class="qstep"><b>03</b><div><h3>We handle the rest</h3><p>Permits, site plan, safety perimeter, soundtrack, cleanup — and the show itself.</p></div></div>
+        </div>
+        <div class="alt">
+          <p>Prefer to talk it through?</p>
+          <a class="alt-phone" href="tel:+15550141989"><i data-lucide="phone" class="ic"></i>(555) 014-1989</a>
+          <a class="alt-mail" href="mailto:shows@skylarkpyro.com"><i data-lucide="mail" class="ic"></i>shows@skylarkpyro.com</a>
+        </div>
+      </div>
+
+      <div class="rv">
+        <div class="ticket-card">
+          <div class="stub"><span>Admit one • Free quote</span></div>
+          <div class="form-side">
+            <!-- SWAP-IN POINT: if you'd rather use your own provided form embed code,
+                 replace the <form> element below with it and keep the ticket wrapper. -->
+            <form id="intakeForm" novalidate>
+              <div class="field">
+                <label for="f-name">Full name <span class="req">*</span></label>
+                <input id="f-name" name="name" type="text" autocomplete="name" placeholder="Jordan Rivera" required>
+                <p class="err"><i data-lucide="circle-alert" class="ic"></i>Please tell us your name.</p>
+              </div>
+              <div class="frow">
+                <div class="field">
+                  <label for="f-phone">Phone <span class="req">*</span></label>
+                  <input id="f-phone" name="phone" type="tel" autocomplete="tel" placeholder="(555) 248-0147" required>
+                  <p class="err"><i data-lucide="circle-alert" class="ic"></i>Enter a number we can reach you on.</p>
+                </div>
+                <div class="field">
+                  <label for="f-email">Email <span class="req">*</span></label>
+                  <input id="f-email" name="email" type="email" autocomplete="email" placeholder="jordan@example.com" required>
+                  <p class="err"><i data-lucide="circle-alert" class="ic"></i>That email doesn't look right — mind checking it?</p>
+                </div>
+              </div>
+              <div class="frow">
+                <div class="field">
+                  <label for="f-date">Event date <span class="req">*</span></label>
+                  <input id="f-date" name="eventDate" type="date" required>
+                  <p class="err"><i data-lucide="circle-alert" class="ic"></i>Pick a date that hasn't passed yet.</p>
+                </div>
+                <div class="field">
+                  <label for="f-venue">Venue size <span class="req">*</span></label>
+                  <div class="selwrap">
+                    <select id="f-venue" name="venueSize" required>
+                      <option value="" selected disabled>Select the closest match…</option>
+                      <option>Backyard / private property</option>
+                      <option>Small grounds — under 2 acres</option>
+                      <option>Medium site — 2 to 10 acres</option>
+                      <option>Large site — 10 to 50 acres</option>
+                      <option>Stadium, fairground or waterfront</option>
+                      <option>Rooftop or urban venue</option>
+                      <option>Not sure yet</option>
+                    </select>
+                    <i data-lucide="chevron-down" class="ic"></i>
+                  </div>
+                  <p class="err"><i data-lucide="circle-alert" class="ic"></i>Choose the option closest to your venue.</p>
+                </div>
+              </div>
+              <div class="field">
+                <label for="f-message">Message <span class="opt">(optional)</span></label>
+                <textarea id="f-message" name="message" rows="4" placeholder="The occasion, guest count, city — anything that helps us picture it."></textarea>
+              </div>
+              <div class="form-foot">
+                <button type="submit" class="btn btn-coral ticket" id="submitBtn">Send my request <i data-lucide="arrow-right" class="ic"></i></button>
+                <p class="micro"><i data-lucide="lock" class="ic"></i>We reply within one business day. Your details stay with us — never shared, never sold.</p>
+              </div>
+            </form>
+
+            <div class="success" id="formSuccess" hidden>
+              <i data-lucide="star" class="ic ok-ic"></i>
+              <h3>You're on the launch list</h3>
+              <p class="ref" id="successRef"></p>
+              <p id="successText"></p>
+              <button type="button" class="btn btn-ghost-l" id="resetForm">Send another request</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ==================================================
+     PAGE 2 — OUR SHOWS
+     ================================================== -->
+<div id="view-shows" class="view" hidden>
+
+  <section class="shows-head">
+    <div class="container">
+      <p class="kicker rv"><i data-lucide="sparkle" class="ic"></i>Our shows</p>
+      <h2 class="h2 rv">Five ways to set the night <em>alight.</em></h2>
+      <p class="lead rv">Every show is designed, permitted, and fired by our own crew — never subcontracted, never off-the-shelf. Find your closest fit below, then tell us what you're imagining.</p>
+      <figure class="banner rv">
+        <div class="ph">
+          <!-- PLACEHOLDER PHOTO: wide shot from a signature display -->
+          <img src="https://picsum.photos/seed/skylark-river/1600/690.jpg" alt="Wide riverfront fireworks finale" loading="lazy">
+          <figcaption class="banner-cap"><i data-lucide="map-pin" class="ic"></i>Riverfront New Year finale — Port Halyard · 22 min · 900 shells</figcaption>
+        </div>
+      </figure>
+    </div>
+  </section>
+
+  <!-- services as color-coded poster cards -->
+  <section class="section" id="services">
+    <div class="container">
+      <div class="svc-list rv">
+
+        <article class="svc" style="--acc:var(--coral);--acc-ink:var(--coral-ink)">
+          <span class="svc-num">01</span>
+          <div>
+            <h3>Weddings &amp; private celebrations</h3>
+            <p class="svc-desc">A bespoke three-to-eight-minute send-off fired right after the first dance or the toast. We work in tight spaces and tighter timelines, keep the noise considerate of neighbors, and end on a finale your guests will retell for the next twenty years.</p>
+            <div class="chips"><span class="chip2">80–200 shells</span><span class="chip2">3–8 minutes</span><span class="chip2">4–6 weeks lead</span></div>
+          </div>
+          <div class="svc-side">
+            <span class="svc-meta">Signature series</span>
+            <a class="svc-link" href="#/home" data-go="home" data-anchor="quote">Book this <i data-lucide="arrow-right" class="ic"></i></a>
+          </div>
+        </article>
+
+        <article class="svc" style="--acc:var(--gold);--acc-ink:var(--gold-ink)">
+          <span class="svc-num">02</span>
+          <div>
+            <h3>Corporate &amp; brand moments</h3>
+            <p class="svc-desc">Product launches, anniversaries, milestone years. Shells matched to your palette, a logo rendered in fire, and a reveal timed to the second — with a photographer-friendly rehearsal the night before so the shots are guaranteed.</p>
+            <div class="chips"><span class="chip2">150–400 shells</span><span class="chip2">4–10 minutes</span><span class="chip2">6–8 weeks lead</span></div>
+          </div>
+          <div class="svc-side">
+            <span class="svc-meta">Brand in the sky</span>
+            <a class="svc-link" href="#/home" data-go="home" data-anchor="quote">Book this <i data-lucide="arrow-right" class="ic"></i></a>
+          </div>
+        </article>
+
+        <article class="svc" style="--acc:var(--violet);--acc-ink:var(--violet-ink)">
+          <span class="svc-num">03</span>
+          <div>
+            <h3>Civic &amp; holiday spectaculars</h3>
+            <p class="svc-desc">Fourth of July, New Year's Eve, heritage days. Community-scale shows choreographed to a custom soundtrack, with commentary-ready cue sheets, airspace coordination, and crowd-safety modeling included — the whole evening, handled.</p>
+            <div class="chips"><span class="chip2">400–1,200 shells</span><span class="chip2">12–25 minutes</span><span class="chip2">10–14 weeks lead</span></div>
+          </div>
+          <div class="svc-side">
+            <span class="svc-meta">Full-city scale</span>
+            <a class="svc-link" href="#/home" data-go="home" data-anchor="quote">Book this <i data-lucide="arrow-right" class="ic"></i></a>
+          </div>
+        </article>
+
+        <article class="svc" style="--acc:var(--teal);--acc-ink:var(--teal-ink)">
+          <span class="svc-num">04</span>
+          <div>
+            <h3>Stadium &amp; arena productions</h3>
+            <p class="svc-desc">Post-game fireworks and festival finales built for 20,000-plus seats: low-smoke composites that won't fog the replay, angles cleared with venue operations, and frame-accurate cues locked to your scoreboard.</p>
+            <div class="chips"><span class="chip2">600–1,500 shells</span><span class="chip2">8–14 minutes</span><span class="chip2">12–16 weeks lead</span></div>
+          </div>
+          <div class="svc-side">
+            <span class="svc-meta">Big-house energy</span>
+            <a class="svc-link" href="#/home" data-go="home" data-anchor="quote">Book this <i data-lucide="arrow-right" class="ic"></i></a>
+          </div>
+        </article>
+
+        <article class="svc" style="--acc:var(--pink);--acc-ink:var(--pink-ink)">
+          <span class="svc-num">05</span>
+          <div>
+            <h3>Close-proximity &amp; rooftop</h3>
+            <p class="svc-desc">Vineyards, terraces, rooftops, courtyards. 1.4G close-proximity designs with fire-marshal coordination, structural sign-off, and site documentation handled from day one — big artistry where space is the constraint.</p>
+            <div class="chips"><span class="chip2">40–150 shells</span><span class="chip2">2–6 minutes</span><span class="chip2">6–10 weeks lead</span></div>
+          </div>
+          <div class="svc-side">
+            <span class="svc-meta">Urban scale</span>
+            <a class="svc-link" href="#/home" data-go="home" data-anchor="quote">Book this <i data-lucide="arrow-right" class="ic"></i></a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- gallery: snap filmstrip -->
+  <section class="section perf-top" id="gallery">
+    <div class="container">
+      <div class="gal-head rv">
+        <div>
+          <p class="kicker"><i data-lucide="sparkle" class="ic"></i>Portfolio</p>
+          <h2 class="h2">Recent displays.</h2>
+        </div>
+        <div class="gal-nav">
+          <button class="gal-btn" id="galPrev" aria-label="Previous photos"><i data-lucide="arrow-left" class="ic"></i></button>
+          <button class="gal-btn" id="galNext" aria-label="Next photos"><i data-lucide="arrow-right" class="ic"></i></button>
+        </div>
+      </div>
+      <!-- PLACEHOLDER PHOTOS: replace each picsum src with your real show photography -->
+      <div class="strip rv" id="strip">
+        <figure class="sitem"><div class="ph"><img src="https://picsum.photos/seed/skylark-a/760/950.jpg" alt="Golden willow shells over a harbor" loading="lazy"></div><figcaption><b>Golden willows over the harbor</b><span>Port Halyard · NYE</span></figcaption></figure>
+        <figure class="sitem"><div class="ph"><img src="https://picsum.photos/seed/skylark-b/760/950.jpg" alt="Fireworks above a vineyard wedding" loading="lazy"></div><figcaption><b>First-dance send-off</b><span>Blackbriar Vineyards</span></figcaption></figure>
+        <figure class="sitem"><div class="ph"><img src="https://picsum.photos/seed/skylark-c/760/950.jpg" alt="Corporate display in brand colors" loading="lazy"></div><figcaption><b>Reveal in the client's colors</b><span>Meridian launch</span></figcaption></figure>
+        <figure class="sitem"><div class="ph"><img src="https://picsum.photos/seed/skylark-d/760/950.jpg" alt="Stadium finale after a home game" loading="lazy"></div><figcaption><b>Post-game stadium finale</b><span>Kestrels opener</span></figcaption></figure>
+        <figure class="sitem"><div class="ph"><img src="https://picsum.photos/seed/skylark-e/760/950.jpg" alt="Close-proximity rooftop display" loading="lazy"></div><figcaption><b>Rooftop close-proximity</b><span>40 ft above Main</span></figcaption></figure>
+        <figure class="sitem"><div class="ph"><img src="https://picsum.photos/seed/skylark-f/760/950.jpg" alt="Civic spectacular over a riverfront" loading="lazy"></div><figcaption><b>Sesquicentennial spectacular</b><span>Riverfront civic</span></figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- closing CTA -->
+  <section class="section cta">
+    <span class="cta-star" aria-hidden="true"></span>
+    <div class="container cta-in">
+      <div class="rv">
+        <p class="kicker"><i data-lucide="sparkle" class="ic"></i>Start something unforgettable</p>
+        <h2 class="h2">Let's light up <em>your date.</em></h2>
+        <a class="cta-phone" href="tel:+15550141989">(555) 014-1989</a>
+      </div>
+      <div class="cta-right rv">
+        <a class="btn btn-cream ticket" href="#/home" data-go="home" data-anchor="quote">Get your quote <i data-lucide="arrow-right" class="ic"></i></a>
+        <a class="cta-mail" href="mailto:shows@skylarkpyro.com">shows@skylarkpyro.com — same one-business-day promise</a>
+      </div>
+    </div>
+  </section>
+</div>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-foot">
+  <div class="container">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a class="brand" href="#/home" data-go="home">
+          <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><path d="M16 1.5 19.2 12 30 15.2 19.2 18.4 16 29 12.8 18.4 2 15.2 12.8 12Z" fill="#FF4B2E"/><circle cx="25.5" cy="5.5" r="3" fill="#FFB524"/></svg>
+          <span class="brand-txt"><span class="brand-name">SKYLARK</span><span class="brand-sub">Pyrotechnics</span></span>
+        </a>
+        <p>Family-run fireworks since 1989. Licensed, insured, and stubborn about the details.</p>
+      </div>
+      <div class="foot-col">
+        <h4>Explore</h4>
+        <a href="#/home" data-go="home">Home</a>
+        <a href="#/shows" data-go="shows">Our shows</a>
+        <a href="#/home" data-go="home" data-anchor="quote">Get a quote</a>
+      </div>
+      <div class="foot-col">
+        <h4>Contact</h4>
+        <a href="tel:+15550141989"><i data-lucide="phone" class="ic"></i>(555) 014-1989</a>
+        <a href="mailto:shows@skylarkpyro.com"><i data-lucide="mail" class="ic"></i>shows@skylarkpyro.com</a>
+        <a href="#/home" data-go="home" data-anchor="quote"><i data-lucide="map-pin" class="ic"></i>Halyard, USA — we travel</a>
+      </div>
+    </div>
+    <div class="foot-low">
+      <span>© <span id="yr"></span> Skylark Pyrotechnics. License #PY-02417 (placeholder) · NFPA 1123 / 1127 compliant.</span>
+      <span>Est. 1989 · Halyard, USA</span>
+    </div>
+  </div>
+  <div class="foot-word" aria-hidden="true">SKYLARK</div>
+</footer>
+
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+<script>
+(function(){
+'use strict';
+if(window.lucide) lucide.createIcons();
+
+/* ==========================================================
+   CONFIG — the only two lines you normally need to touch:
+   1) FORM_ENDPOINT: paste a form endpoint (e.g. a free
+      Formspree address, or your WordPress handler) and
+      submissions POST there as JSON.
+   2) NOTIFY_EMAIL: with no endpoint set, the form falls
+      back to opening the visitor's email app with every
+      field pre-filled, addressed to this inbox.
+   ========================================================== */
+const FORM_ENDPOINT = '';
+const NOTIFY_EMAIL  = 'shows@skylarkpyro.com';
+
+const $  = (s,c)=>(c||document).querySelector(s);
+const $$ = (s,c)=>Array.from((c||document).querySelectorAll(s));
+
+/* ---------- toast ---------- */
+const toastEl=$('#toast'); let toastT;
+function toast(msg){
+  $('span',toastEl).textContent=msg;
+  toastEl.classList.add('show');
+  clearTimeout(toastT);
+  toastT=setTimeout(()=>toastEl.classList.remove('show'),4200);
+}
+
+/* ---------- header + mobile menu ---------- */
+const head=$('#siteHead');
+addEventListener('scroll',()=>head.classList.toggle('scrolled',scrollY>8),{passive:true});
+const burger=$('#burger');
+function closeMenu(){ document.body.classList.remove('menu-open'); burger.setAttribute('aria-expanded','false'); }
+burger.addEventListener('click',()=>{
+  const open=document.body.classList.toggle('menu-open');
+  burger.setAttribute('aria-expanded',open);
+});
+addEventListener('keydown',e=>{ if(e.key==='Escape') closeMenu(); });
+
+/* ---------- tiny router: the two "pages" live side by side ---------- */
+const VIEWS=['home','shows'];
+let pendingAnchor=null;
+function showView(name,anchor){
+  VIEWS.forEach(v=>{ $('#view-'+v).hidden = (v!==name); });
+  $$('.nav-link').forEach(a=>a.classList.toggle('active',a.dataset.go===name));
+  closeMenu();
+  if(anchor){
+    requestAnimationFrame(()=>{
+      const t=document.getElementById(anchor);
+      if(t) t.scrollIntoView({behavior:'smooth',block:'start'});
+    });
+  } else scrollTo(0,0);
+}
+function hashName(){ const m=location.hash.match(/^#\/(\w+)/); return (m&&VIEWS.includes(m[1]))?m[1]:'home'; }
+function navigate(view,anchor){
+  if('#/'+view===location.hash) showView(view,anchor);
+  else { pendingAnchor=anchor||null; location.hash='#/'+view; }
+}
+addEventListener('hashchange',()=>{ showView(hashName(),pendingAnchor); pendingAnchor=null; });
+ $$('[data-go]').forEach(el=>el.addEventListener('click',e=>{
+  e.preventDefault();
+  navigate(el.dataset.go, el.dataset.anchor||null);
+}));
+showView(hashName(),null);
+
+/* ---------- reveal-on-scroll ---------- */
+const io=new IntersectionObserver(es=>es.forEach(e=>{
+  if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); }
+}),{threshold:.12});
+ $$('.rv').forEach(el=>io.observe(el));
+
+/* ---------- stat count-up ---------- */
+const fmt=n=>n.toLocaleString('en-US');
+const cio=new IntersectionObserver(es=>es.forEach(e=>{
+  if(!e.isIntersecting) return;
+  cio.unobserve(e.target);
+  const el=e.target, end=+el.dataset.count;
+  if(matchMedia('(prefers-reduced-motion: reduce)').matches){ el.textContent=fmt(end); return; }
+  const t0=performance.now(), D=1300;
+  (function tick(t){
+    const p=Math.min(1,(t-t0)/D), ease=1-Math.pow(1-p,3);
+    el.textContent=fmt(Math.round(end*ease));
+    if(p<1) requestAnimationFrame(tick);
+  })(t0);
+}),{threshold:.5});
+ $$('.count').forEach(el=>cio.observe(el));
+
+/* ---------- "fuse" history timeline ----------
+   A gold spark travels along the fuse; when it reaches the
+   next stop, that era "ignites". Clicking a stop takes
+   manual control. Auto-advance pauses off-screen/hidden. */
+(function(){
+  const rail=$('.fuse-rail'), spark=$('.fuse-spark');
+  if(!rail) return;
+  const stops=$$('.fuse-stop'), panels=$$('.fuse-panels .fuse-panel');
+  const DUR=5200, reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  let cur=0, prog=0, last=0, auto=!reduced, inViewF=true;
+
+  const center=i=>{
+    const d=stops[i].querySelector('.fuse-dot').getBoundingClientRect();
+    const r=rail.getBoundingClientRect();
+    return d.left-r.left+d.width/2;
+  };
+  function setCur(i){
+    cur=i; prog=0;
+    stops.forEach((s,k)=>{
+      s.classList.toggle('is-on',k===i);
+      s.setAttribute('aria-pressed',k===i?'true':'false');
+    });
+    panels.forEach((p,k)=>{
+      p.classList.toggle('is-on',k===i);
+      p.setAttribute('aria-hidden',k===i?'false':'true');
+    });
+  }
+  stops.forEach((s,i)=>s.addEventListener('click',()=>{
+    auto=false; spark.style.opacity='0';
+    setCur(i);
+  }));
+  new IntersectionObserver(en=>{ inViewF=en[0].isIntersecting; },{threshold:.15}).observe($('#fuse'));
+  setCur(0);
+  if(!reduced){
+    spark.style.left=center(0)+'px';
+    requestAnimationFrame(function tick(ts){
+      if(!last) last=ts;
+      const dt=ts-last; last=ts;
+      if(auto&&inViewF&&!document.hidden){
+        prog+=dt;
+        const p=Math.min(1,prog/DUR), next=(cur+1)%stops.length;
+        spark.style.left=(center(cur)+(center(next)-center(cur))*p)+'px';
+        if(p>=1) setCur(next);
+      }
+      requestAnimationFrame(tick);
+    });
+    addEventListener('resize',()=>{ spark.style.left=center(cur)+'px'; });
+  }else{
+    spark.style.opacity='0';
+  }
+})();
+
+/* ---------- gallery filmstrip: arrows + drag-to-scroll ---------- */
+(function(){
+  const strip=$('#strip'); if(!strip) return;
+  const prev=$('#galPrev'), next=$('#galNext');
+  const step=()=>{ const it=strip.querySelector('.sitem'); return it?it.getBoundingClientRect().width+18:320; };
+  prev.addEventListener('click',()=>strip.scrollBy({left:-step(),behavior:'smooth'}));
+  next.addEventListener('click',()=>strip.scrollBy({left: step(),behavior:'smooth'}));
+  function sync(){
+    const max=strip.scrollWidth-strip.clientWidth-2;
+    prev.toggleAttribute('disabled',strip.scrollLeft<=2);
+    next.toggleAttribute('disabled',strip.scrollLeft>=max);
+  }
+  strip.addEventListener('scroll',sync,{passive:true});
+  addEventListener('resize',sync);
+  sync();
+  let down=false,sx=0,sl=0,moved=false;
+  strip.addEventListener('pointerdown',e=>{
+    if(e.pointerType!=='mouse') return;
+    down=true; moved=false; sx=e.clientX; sl=strip.scrollLeft;
+    strip.classList.add('dragging');
+  });
+  addEventListener('pointermove',e=>{
+    if(!down) return;
+    const dx=e.clientX-sx;
+    if(Math.abs(dx)>4) moved=true;
+    strip.scrollLeft=sl-dx;
+  });
+  addEventListener('pointerup',()=>{ if(!down) return; down=false; strip.classList.remove('dragging'); });
+  strip.addEventListener('click',e=>{ if(moved){ e.preventDefault(); e.stopPropagation(); } },true);
+})();
+
+/* ---------- intake form ---------- */
+const form=$('#intakeForm'), success=$('#formSuccess'),
+      successText=$('#successText'), successRef=$('#successRef'), submitBtn=$('#submitBtn');
+const val=id=>$('#'+id).value;
+const rules={
+  'f-name'   : v=>v.trim().length>=2,
+  'f-phone'  : v=>v.replace(/\D/g,'').length>=7,
+  'f-email'  : v=>/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v.trim()),
+  'f-date'   : v=>{ if(!v) return false;
+                    const d=new Date(v+'T12:00:00'), n=new Date(); n.setHours(0,0,0,0);
+                    return d>=n; },
+  'f-venue'  : v=>v!=='',
+  'f-message': ()=>true
+};
+function mark(id,bad){
+  const el=$('#'+id);
+  el.closest('.field').classList.toggle('invalid',bad);
+  el.setAttribute('aria-invalid',bad?'true':'false');
+}
+Object.keys(rules).forEach(id=>{
+  const el=$('#'+id);
+  el.addEventListener('input', ()=>mark(id,false));
+  el.addEventListener('change',()=>mark(id,false));
+  el.addEventListener('blur', ()=>{ if(el.value.trim()!=='') mark(id,!rules[id](el.value)); });
+});
+/* no past dates */
+const now=new Date(), p=n=>String(n).padStart(2,'0');
+ $('#f-date').min=`${now.getFullYear()}-${p(now.getMonth()+1)}-${p(now.getDate())}`;
+
+form.addEventListener('submit', async e=>{
+  e.preventDefault();
+  let firstBad=null;
+  Object.keys(rules).forEach(id=>{
+    const ok=rules[id](val(id));
+    mark(id,!ok);
+    if(!ok&&!firstBad) firstBad=$('#'+id);
+  });
+  if(firstBad){ firstBad.focus(); toast('Almost there — check the highlighted fields.'); return; }
+
+  const data={
+    name:val('f-name').trim(), phone:val('f-phone').trim(), email:val('f-email').trim(),
+    eventDate:val('f-date'), venueSize:val('f-venue'), message:val('f-message').trim()
+  };
+  const original=submitBtn.innerHTML;
+  submitBtn.disabled=true; submitBtn.textContent='Sending…';
+  try{
+    if(FORM_ENDPOINT){
+      const res=await fetch(FORM_ENDPOINT,{
+        method:'POST',
+        headers:{'Accept':'application/json','Content-Type':'application/json'},
+        body:JSON.stringify(data)
+      });
+      if(!res.ok) throw new Error('bad response');
+      successText.textContent=`Thanks, ${data.name.split(' ')[0]} — your request is in. A pyrotechnician from our crew will reach out within one business day.`;
+    }else{
+      const body=encodeURIComponent(
+        `Name: ${data.name}\nPhone: ${data.phone}\nEmail: ${data.email}\nEvent date: ${data.eventDate}\nVenue size: ${data.venueSize}\n\nMessage:\n${data.message||'(none)'}`);
+      location.href=`mailto:${NOTIFY_EMAIL}?subject=${encodeURIComponent('Quote request — '+data.name+' — '+data.eventDate)}&body=${body}`;
+      successText.textContent="Your email app just opened with everything pre-filled — hit send and we'll reply within one business day.";
+    }
+    successRef.textContent='Request #SKY-'+(1000+Math.floor(Math.random()*9000));
+    form.hidden=true; success.hidden=false;
+    toast('Thank you — talk soon.');
+  }catch(err){
+    toast('Something went wrong — please call us at (555) 014-1989.');
+  }finally{
+    submitBtn.disabled=false; submitBtn.innerHTML=original;
+    if(window.lucide) lucide.createIcons();
+  }
+});
+ $('#resetForm').addEventListener('click',()=>{
+  success.hidden=true; form.hidden=false;
+  form.reset();
+  Object.keys(rules).forEach(id=>mark(id,false));
+  $('#f-name').focus();
+});
+
+/* ---------- footer year ---------- */
+ $('#yr').textContent=new Date().getFullYear();
+
+/* ==========================================================
+   HERO STARFIELD — twinkling night sky + star-shaped bursts.
+   Click anywhere in the hero to launch one. Pauses when the
+   hero is off-screen or the tab is hidden; renders a static
+   composition if reduced motion is preferred.
+   ========================================================== */
+(function(){
+  const hero=$('#hero'), cv=$('#heroStars');
+  if(!hero||!cv) return;
+  const ctx=cv.getContext('2d');
+  const reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const PAL=['#FFB524','#FFB524','#FF7A45','#F5EFDF','#9D8CFF','#FF7FA8'];
+  const rnd=(a,b)=>a+Math.random()*(b-a);
+  const pick=a=>a[(Math.random()*a.length)|0];
+  let W=0,H=0,twinkles=[],parts=[],raf=0,running=false,inView=true,awake=!document.hidden,nextAuto=0;
+
+  function drawStar(x,y,r,rot,color,alpha){
+    ctx.save(); ctx.translate(x,y); ctx.rotate(rot);
+    ctx.globalAlpha=alpha; ctx.fillStyle=color;
+    ctx.beginPath();
+    ctx.moveTo(0,-r);
+    ctx.quadraticCurveTo(0,0, r,0);
+    ctx.quadraticCurveTo(0,0, 0,r);
+    ctx.quadraticCurveTo(0,0,-r,0);
+    ctx.quadraticCurveTo(0,0, 0,-r);
+    ctx.closePath(); ctx.fill(); ctx.restore();
+  }
+  function seed(){
+    twinkles=[];
+    if(W<10||H<10) return;
+    const n=Math.min(150,Math.round(W*H/15000));
+    for(let i=0;i<n;i++) twinkles.push({x:Math.random()*W,y:Math.random()*H,r:rnd(.5,1.6),ph:rnd(0,6.28),sp:rnd(.5,1.6),base:rnd(.2,.6)});
+  }
+  function burst(x,y,big){
+    if(W<10) return;
+    const n=big?44:30;
+    for(let i=0;i<n;i++){
+      const a=rnd(0,6.283), v=rnd(.6,4.4)*(big?1.1:1);
+      parts.push({x,y,vx:Math.cos(a)*v,vy:Math.sin(a)*v-.4,life:rnd(46,92),max:92,
+                  r:rnd(1.6,4.4),rot:rnd(0,6.28),vr:rnd(-.14,.14),c:pick(PAL)});
+    }
+  }
+  function physics(){
+    for(let i=parts.length-1;i>=0;i--){
+      const s=parts[i];
+      s.x+=s.vx; s.y+=s.vy; s.vy+=.052; s.vx*=.987; s.vy*=.987; s.rot+=s.vr; s.life--;
+      if(s.life<=0||s.y>H+30) parts.splice(i,1);
+    }
+  }
+  function render(t){
+    ctx.clearRect(0,0,W,H);
+    for(const s of twinkles){
+      ctx.globalAlpha=s.base*(.55+.45*Math.sin(t*.001*s.sp+s.ph));
+      ctx.fillStyle='#F5EFDF';
+      ctx.beginPath(); ctx.arc(s.x,s.y,s.r,0,6.283); ctx.fill();
+    }
+    ctx.globalAlpha=1;
+    for(const s of parts){
+      const lf=s.life/s.max;
+      drawStar(s.x,s.y,s.r*(.35+.65*lf),s.rot,s.c,Math.min(1,lf*1.6));
+    }
+  }
+  function frame(ts){
+    if(!running) return;
+    physics();
+    if(ts>nextAuto&&parts.length<300){
+      burst(rnd(W*.12,W*.88),rnd(H*.16,H*.5),false);
+      nextAuto=ts+rnd(2200,4200);
+    }
+    render(ts);
+    raf=requestAnimationFrame(frame);
+  }
+  function sync(){
+    const should=inView&&awake&&!reduced;
+    if(should&&!running){ running=true; nextAuto=performance.now()+600; raf=requestAnimationFrame(frame); }
+    else if(!should&&running){ running=false; cancelAnimationFrame(raf); }
+  }
+  function paintStatic(){
+    parts=[];
+    burst(W*.3,H*.3,false); burst(W*.66,H*.22,false); burst(W*.5,H*.42,true);
+    for(let i=0;i<85;i++) physics();
+    render(0);
+  }
+  function resize(){
+    const d=Math.min(devicePixelRatio||1,2);
+    W=hero.clientWidth; H=hero.clientHeight;
+    if(W<10||H<10) return;
+    cv.width=W*d; cv.height=H*d;
+    ctx.setTransform(d,0,0,d,0,0);
+    seed();
+    if(reduced) paintStatic();
+  }
+  new ResizeObserver(resize).observe(hero);
+  resize();
+  new IntersectionObserver(en=>{ inView=en[0].isIntersecting; sync(); },{threshold:.05}).observe(hero);
+  document.addEventListener('visibilitychange',()=>{ awake=!document.hidden; sync(); });
+  hero.addEventListener('pointerdown',e=>{
+    if(e.target.closest('a,button')) return;
+    const b=hero.getBoundingClientRect(), x=e.clientX-b.left, y=e.clientY-b.top;
+    if(reduced){ parts=[]; burst(x,y,true); for(let i=0;i<60;i++) physics(); render(0); return; }
+    burst(x,y,true);
+  });
+  if(!reduced&&W>0){ burst(W*.5,H*.3,false); burst(W*.3,H*.26,false); }
+  sync();
+})();
+})();
+</script>
+</body>
+</html>
